@@ -29,8 +29,7 @@ public class ClientConfig {
 //                .build();
 //    }
     @Bean
-    public ChatClient chatClient(ChatClient.Builder chatClientBuilder,
-                                 ToolCallbackProvider tools) {
+    public ChatClient chatClient(ChatClient.Builder chatClientBuilder) {
         return chatClientBuilder
                 .defaultAdvisors(
                         // new SimpleLoggerAdvisor(),
