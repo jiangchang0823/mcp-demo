@@ -8,13 +8,13 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import java.util.List;
 
 @SpringBootApplication
-public class McpDemoApplication {
+public class McpServerDemoApplication {
 
     @Autowired
     private List<IMcpProviderService> toolsProviderServices;
 
     public static void main(String[] args) {
-        SpringApplication.run(McpDemoApplication.class, args);
+        SpringApplication.run(McpServerDemoApplication.class, args);
     }
 
 }
