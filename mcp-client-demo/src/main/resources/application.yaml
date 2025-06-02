@@ -18,10 +18,20 @@ spring:
             server1:
               url: http://localhost:8090
 
-    ollama:
-      base-url: http://localhost:11434
+    # 以下为基于openai服务的配置信息
+    openai:
+      base-url: https://ark.cn-beijing.volces.com/api/
+      api-key: 41532316-2144-4006-8bf3-7c5fd4a4e64d
       chat:
-        model: qwen3:1.7b
+        options:
+          model: deepseek-v3-250324 #doubao-1-5-pro-256k-250115
+
+
+# 以下配置为基于ollama部署的模型的配置信息
+#    ollama:
+#      base-url: http://localhost:11434
+#      chat:
+#        model: qwen3:1.7b
 logging:
   level:
     org.springframework.ai.chat.client.advisor: debug
