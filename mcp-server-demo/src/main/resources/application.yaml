@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: mcp-demo
+  ai:
+    mcp:
+      server:
+        name: course-mcp-server
+        version: 1.0.0
+        type: SYNC
+        sse-message-endpoint: /mcp/messages
+  main:
+    banner-mode: console
+#    web-application-type: none
+
+
+server:
+  port: 8090
